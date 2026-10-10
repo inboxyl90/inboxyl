@@ -12,114 +12,114 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
         .glass-card {
-            background: rgba(255, 255, 255, 0.03);
+            background: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.03);
         }
         .text-gradient {
-            background: linear-gradient(135deg, #FFFFFF 0%, #94A3B8 100%);
+            background: linear-gradient(135deg, #0F172A 0%, #334155 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
     </style>
 </head>
-<body class="bg-[#0B0F17] text-slate-300 antialiased flex flex-col min-h-screen">
+<body class="bg-slate-50 text-slate-600 antialiased flex flex-col min-h-screen">
 
     <!-- Ambient Light -->
-    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-purple-600/15 blur-[120px] pointer-events-none -z-10 rounded-full"></div>
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-purple-200/40 blur-[120px] pointer-events-none -z-10 rounded-full"></div>
 
-    <header class="sticky top-0 z-50 border-b border-white/5 bg-[#0B0F17]/80 backdrop-blur-md">
+    <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-md">
         <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3 font-semibold text-lg text-white tracking-tight">
-                <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white shadow-lg shadow-indigo-500/20">
+            <a href="index.html" class="flex items-center gap-3 font-semibold text-lg text-slate-900 tracking-tight">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-purple-600 flex items-center justify-center text-white shadow-md shadow-indigo-500/20">
                     <i class="fa-solid fa-globe text-sm"></i>
                 </div>
-                <span>Inboxyl <span class="text-slate-500 font-normal">Global Trade Consulting</span></span>
+                <span>Inboxyl <span class="text-slate-400 font-normal">Global Trade Consulting</span></span>
             </a>
             
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
-                <a href="index.html" class="text-slate-400 hover:text-white transition">Ana Sayfa</a>
-                <a href="pazar-arastirmasi.html" class="text-slate-400 hover:text-white transition">Pazar Araştırması</a>
-                <a href="ithalatci-listeleri.html" class="text-white font-semibold">İthalatçı Listeleri</a>
-                <a href="ticaret-heyetleri.html" class="text-slate-400 hover:text-white transition">Ticaret Heyetleri</a>
+                <a href="index.html" class="text-slate-600 hover:text-indigo-600 transition">Ana Sayfa</a>
+                <a href="pazar-arastirmasi.html" class="text-slate-600 hover:text-indigo-600 transition">Pazar Araştırması</a>
+                <a href="ithalatci-listeleri.html" class="text-indigo-600 font-semibold">İthalatçı Listeleri</a>
+                <a href="ticaret-heyetleri.html" class="text-slate-600 hover:text-indigo-600 transition">Ticaret Heyetleri</a>
             </nav>
 
             <div class="flex items-center gap-4">
-                <a href="ithalatci-listeleri-en.html" class="text-xs font-semibold px-3 py-1.5 rounded-full border border-white/10 text-slate-300 hover:bg-white/5 transition">EN</a>
-                <a href="index.html#iletisim" class="text-xs font-semibold px-4 py-2 rounded-full bg-white text-slate-950 hover:bg-slate-200 transition">İletişim</a>
+                <a href="ithalatci-listeleri-en.html" class="text-xs font-semibold px-3 py-1.5 rounded-full border border-slate-300 text-slate-700 hover:bg-slate-100 transition">EN</a>
+                <a href="index.html#iletisim" class="text-xs font-semibold px-4 py-2 rounded-full bg-slate-900 text-white hover:bg-slate-800 transition shadow-sm">İletişim</a>
             </div>
         </div>
     </header>
 
     <!-- Page Title Banner -->
-    <section class="py-12 border-b border-white/5">
+    <section class="py-12 border-b border-slate-200 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <h1 class="text-4xl md:text-5xl font-extrabold text-gradient">Nitelikli İthalatçı Listeleri</h1>
-            <p class="text-slate-400 mt-3 text-lg max-w-2xl">Ülkenizdeki ihracatçıların Türkiye'deki doğrudan satın alma yetkililerine ulaşmasını sağlıyoruz.</p>
+            <p class="text-slate-600 mt-3 text-lg max-w-2xl">Ülkenizdeki ihracatçıların Türkiye'deki doğrudan satın alma yetkililerine ulaşmasını sağlıyoruz.</p>
         </div>
     </section>
 
     <main class="max-w-7xl mx-auto px-6 py-16 flex-grow">
         <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div class="space-y-6">
-                <!-- BURASI GÜNCELLENDİ -->
-                <h2 class="text-2xl font-bold text-white tracking-tight">Karar Vericilerin Doğrulanmış İletişim Verileri</h2>
-                <p class="text-slate-400 leading-relaxed">
+                <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Karar Vericilerin Doğrulanmış İletişim Verileri</h2>
+                <p class="text-slate-600 leading-relaxed">
                     Genel ve güncelliğini yitirmiş rehberler yerine, Türkiye'de ilgili ürünü aktif olarak ithal eden ve ticari faaliyeti bulunan firmaların yöneticilerine ulaşıyoruz.
                 </p>
 
                 <div class="space-y-4 pt-2">
                     <div class="glass-card p-4 rounded-xl flex items-start gap-4">
-                        <div class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center shrink-0 mt-1">
+                        <div class="w-8 h-8 rounded-lg bg-purple-50 border border-purple-100 text-purple-600 flex items-center justify-center shrink-0 mt-1">
                             <i class="fa-solid fa-boxes-packing text-xs"></i>
                         </div>
                         <div>
-                            <h4 class="text-white text-sm font-semibold">Ürün Bazlı Özel Filtreleme</h4>
-                            <p class="text-slate-400 text-xs mt-1">Aramakta olduğunuz tam ürünlere uygun alıcı profilleri listelenir.</p>
+                            <h4 class="text-slate-900 text-sm font-semibold">Ürün Bazlı Özel Filtreleme</h4>
+                            <p class="text-slate-600 text-xs mt-1">Aramakta olduğunuz tam ürünlere uygun alıcı profilleri listelenir.</p>
                         </div>
                     </div>
 
                     <div class="glass-card p-4 rounded-xl flex items-start gap-4">
-                        <div class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center shrink-0 mt-1">
+                        <div class="w-8 h-8 rounded-lg bg-purple-50 border border-purple-100 text-purple-600 flex items-center justify-center shrink-0 mt-1">
                             <i class="fa-solid fa-address-book text-xs"></i>
                         </div>
                         <div>
-                            <h4 class="text-white text-sm font-semibold">Doğrudan Karar Vericiler</h4>
-                            <p class="text-slate-400 text-xs mt-1">Satın alma müdürleri, ithalat direktörleri ve şirket sahiplerinin direkt kontak bilgileri.</p>
+                            <h4 class="text-slate-900 text-sm font-semibold">Doğrudan Karar Vericiler</h4>
+                            <p class="text-slate-600 text-xs mt-1">Satın alma müdürleri, ithalat direktörleri ve şirket sahiplerinin direkt kontak bilgileri.</p>
                         </div>
                     </div>
 
                     <div class="glass-card p-4 rounded-xl flex items-start gap-4">
-                        <div class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center shrink-0 mt-1">
+                        <div class="w-8 h-8 rounded-lg bg-purple-50 border border-purple-100 text-purple-600 flex items-center justify-center shrink-0 mt-1">
                             <i class="fa-solid fa-circle-check text-xs"></i>
                         </div>
                         <div>
-                            <h4 class="text-white text-sm font-semibold">Güncel & Doğrulanmış Veri</h4>
-                            <p class="text-slate-400 text-xs mt-1">Telefon, e-posta, web sitesi ve şirket adreslerinin güncelliği tek tek kontrol edilir.</p>
+                            <h4 class="text-slate-900 text-sm font-semibold">Güncel & Doğrulanmış Veri</h4>
+                            <p class="text-slate-600 text-xs mt-1">Telefon, e-posta, web sitesi ve şirket adreslerinin güncelliği tek tek kontrol edilir.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="relative rounded-2xl p-2 bg-gradient-to-b from-white/10 to-transparent border border-white/10 overflow-hidden shadow-2xl">
+            <div class="relative rounded-2xl p-2 bg-white border border-slate-200 overflow-hidden shadow-xl">
                 <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80" 
                      alt="İthalatçı Listesi Hazırlama" 
-                     class="rounded-xl w-full h-[400px] object-cover opacity-80">
+                     class="rounded-xl w-full h-[400px] object-cover">
             </div>
         </div>
 
-        <div class="glass-card p-8 md:p-10 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-6 border-purple-500/30">
+        <div class="glass-card p-8 md:p-10 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-6 border-purple-200 bg-white shadow-xl">
             <div>
-                <h3 class="text-xl font-semibold text-white">İthalatçı Listesi Talebi</h3>
-                <p class="text-slate-400 text-sm mt-1">Büyükelçiliğinize başvuran ihracatçı firmalar için özel ithalatçı listeleri hazırlayalım.</p>
+                <h3 class="text-xl font-semibold text-slate-900">İthalatçı Listesi Talebi</h3>
+                <p class="text-slate-600 text-sm mt-1">Büyükelçiliğinize başvuran ihracatçı firmalar için özel ithalatçı listeleri hazırlayalım.</p>
             </div>
-            <a href="index.html#iletisim" class="px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-500 text-white font-medium text-sm transition shrink-0">
+            <a href="index.html#iletisim" class="px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-700 text-white font-medium text-sm transition shrink-0 shadow-md">
                 Liste Talep Et
             </a>
         </div>
     </main>
 
-    <footer class="py-8 border-t border-white/5 text-center text-xs text-slate-600 mt-auto">
+    <footer class="py-8 border-t border-slate-200 bg-white text-center text-xs text-slate-500 mt-auto">
         <p>&copy; 2026 Inboxyl Global Trade Consulting. Tüm hakları saklıdır.</p>
     </footer>
 
