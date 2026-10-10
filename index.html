@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inboxyl Global Trade Consulting | Diplomatik Dış Ticaret İstihbaratı</title>
+    
+    <!-- Renkli Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%234F46E5' /><stop offset='100%' style='stop-color:%237C3AED' /></linearGradient></defs><rect width='100' height='100' rx='25' fill='url(%23grad)'/><text y='68' x='50' font-size='55' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>I</text></svg>">
+
     <!-- Tailwind CSS & Inter Font -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome & Flag Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"/>
+
     <style>
         body { font-family: 'Inter', sans-serif; }
         .glass-card {
@@ -58,36 +66,42 @@
             </nav>
 
             <div class="flex items-center gap-4">
-<!-- Dil Seçim Menüsü -->
-<div class="relative group py-2">
-    <button class="flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full border border-slate-300 text-slate-700 hover:bg-slate-100 transition">
-        <i class="fa-solid fa-globe text-indigo-600"></i>
-        <span>TR</span>
-        <i class="fa-solid fa-chevron-down text-[10px] text-slate-400"></i>
-    </button>
+                <!-- Dil Seçim Menüsü -->
+                <div class="relative group py-2">
+                    <button class="flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-full border border-slate-300 text-slate-700 hover:bg-slate-100 transition">
+                        <span class="fi fi-tr rounded-sm"></span>
+                        <span>TR</span>
+                        <i class="fa-solid fa-chevron-down text-[10px] text-slate-400"></i>
+                    </button>
 
-    <!-- Dropdown List (Açılır Liste - Boşluksuz Bağlantı) -->
-    <div class="absolute right-0 top-full -mt-1 w-40 bg-white border border-slate-200 rounded-xl shadow-xl py-2 hidden group-hover:block transition-all z-50">
-        <a href="index.html" class="flex items-center justify-between px-4 py-2 text-xs font-semibold text-indigo-600 bg-slate-50">
-            Türkçe <span class="text-slate-400 font-normal">TR</span>
-        </a>
-        <a href="index-en.html" class="flex items-center justify-between px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 transition">
-            English <span class="text-slate-400 font-normal">EN</span>
-        </a>
-        <a href="index-de.html" class="flex items-center justify-between px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 transition">
-            Deutsch <span class="text-slate-400 font-normal">DE</span>
-        </a>
-        <a href="index-fr.html" class="flex items-center justify-between px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 transition">
-            Français <span class="text-slate-400 font-normal">FR</span>
-        </a>
-        <a href="index-es.html" class="flex items-center justify-between px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 transition">
-            Español <span class="text-slate-400 font-normal">ES</span>
-        </a>
-        <a href="index-ar.html" class="flex items-center justify-between px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 transition">
-            العربية <span class="text-slate-400 font-normal">AR</span>
-        </a>
-    </div>
-</div>
+                    <!-- Dropdown List -->
+                    <div class="absolute right-0 top-full -mt-1 w-44 bg-white border border-slate-200 rounded-xl shadow-xl py-2 hidden group-hover:block transition-all z-50">
+                        <a href="index.html" class="flex items-center justify-between px-4 py-2 text-xs font-semibold text-indigo-600 bg-slate-50">
+                            <span class="flex items-center gap-2"><span class="fi fi-tr rounded-sm"></span> Türkçe</span>
+                            <span class="text-slate-400 font-normal">TR</span>
+                        </a>
+                        <a href="index-en.html" class="flex items-center justify-between px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 transition">
+                            <span class="flex items-center gap-2"><span class="fi fi-gb rounded-sm"></span> English</span>
+                            <span class="text-slate-400 font-normal">EN</span>
+                        </a>
+                        <a href="index-de.html" class="flex items-center justify-between px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 transition">
+                            <span class="flex items-center gap-2"><span class="fi fi-de rounded-sm"></span> Deutsch</span>
+                            <span class="text-slate-400 font-normal">DE</span>
+                        </a>
+                        <a href="index-fr.html" class="flex items-center justify-between px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 transition">
+                            <span class="flex items-center gap-2"><span class="fi fi-fr rounded-sm"></span> Français</span>
+                            <span class="text-slate-400 font-normal">FR</span>
+                        </a>
+                        <a href="index-es.html" class="flex items-center justify-between px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 transition">
+                            <span class="flex items-center gap-2"><span class="fi fi-es rounded-sm"></span> Español</span>
+                            <span class="text-slate-400 font-normal">ES</span>
+                        </a>
+                        <a href="index-ar.html" class="flex items-center justify-between px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 transition">
+                            <span class="flex items-center gap-2"><span class="fi fi-sa rounded-sm"></span> العربية</span>
+                            <span class="text-slate-400 font-normal">AR</span>
+                        </a>
+                    </div>
+                </div>
 
                 <a href="#iletisim" class="text-xs font-semibold px-4 py-2 rounded-full bg-slate-900 text-white hover:bg-slate-800 transition shadow-sm">İletişim</a>
             </div>
