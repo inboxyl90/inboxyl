@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Étude de Marché | Inboxyl Global Trade Consulting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"/>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.03);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #0F172A 0%, #334155 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-600 antialiased flex flex-col min-h-screen">
+
+    <!-- Ambient Light -->
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-indigo-200/40 blur-[120px] pointer-events-none -z-10 rounded-full"></div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="index-fr.html" class="flex items-center gap-3 font-semibold text-lg text-slate-900 tracking-tight">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-purple-600 flex items-center justify-center text-white shadow-md shadow-indigo-500/20">
+                    <i class="fa-solid fa-globe text-sm"></i>
+                </div>
+                <span>Inboxyl <span class="text-slate-400 font-normal">Global Trade Consulting</span></span>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="index-fr.html" class="text-slate-600 hover:text-indigo-600 transition">Accueil</a>
+                <a href="pazar-arastirmasi-fr.html" class="text-indigo-600 font-semibold">Étude de Marché</a>
+                <a href="ithalatci-listeleri-fr.html" class="text-slate-600 hover:text-indigo-600 transition">Listes d'Importateurs</a>
+                <a href="ticaret-heyetleri-fr.html" class="text-slate-600 hover:text-indigo-600 transition">Délégations Commerciales</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <!-- Menu de Sélection de Langue -->
+                <div class="relative group py-2">
+                    <button class="flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-full border border-slate-300 text-slate-700 hover:bg-slate-100 transition">
+                        <span class="fi fi-fr rounded-sm"></span>
+                        <span>FR</span>
+                        <i class="fa-solid fa-chevron-down text-[10px] text-slate-400"></i>
+                    </button>
+
+                    <div class="absolute right-0 top-full -mt-1 w-44 bg-white border border-slate-200 rounded-xl shadow-xl py-2 hidden group-hover:block transition-all z-50">
+                        <a href="pazar-arastirmasi.html" class="flex items-center justify-between px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 transition">
+                            <span class="flex items-center gap-2"><span class="fi fi-tr rounded-sm"></span> Türkçe</span>
+                            <span class="text-slate-400 font-normal">TR</span>
+                        </a>
+                        <a href="pazar-arastirmasi-en.html" class="flex items-center justify-between px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 transition">
+                            <span class="flex items-center gap-2"><span class="fi fi-gb rounded-sm"></span> English</span>
+                            <span class="text-slate-400 font-normal">EN</span>
+                        </a>
+                        <a href="pazar-arastirmasi-de.html" class="flex items-center justify-between px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 transition">
+                            <span class="flex items-center gap-2"><span class="fi fi-de rounded-sm"></span> Deutsch</span>
+                            <span class="text-slate-400 font-normal">DE</span>
+                        </a>
+                        <a href="pazar-arastirmasi-fr.html" class="flex items-center justify-between px-4 py-2 text-xs font-semibold text-indigo-600 bg-slate-50">
+                            <span class="flex items-center gap-2"><span class="fi fi-fr rounded-sm"></span> Français</span>
+                            <span class="text-slate-400 font-normal">FR</span>
+                        </a>
+                        <a href="pazar-arastirmasi-es.html" class="flex items-center justify-between px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 transition">
+                            <span class="flex items-center gap-2"><span class="fi fi-es rounded-sm"></span> Español</span>
+                            <span class="text-slate-400 font-normal">ES</span>
+                        </a>
+                        <a href="pazar-arastirmasi-ar.html" class="flex items-center justify-between px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 transition">
+                            <span class="flex items-center gap-2"><span class="fi fi-sa rounded-sm"></span> العربية</span>
+                            <span class="text-slate-400 font-normal">AR</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="index-fr.html#iletisim" class="text-xs font-semibold px-4 py-2 rounded-full bg-slate-900 text-white hover:bg-slate-800 transition shadow-sm">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title Banner -->
+    <section class="py-12 border-b border-slate-200 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gradient py-2 leading-relaxed">Étude de Marché & Analyse</h1>
+            <p class="text-slate-600 mt-3 text-lg max-w-2xl">Informations approfondies sur la dynamique du marché, les données d'importation et l'analyse de la concurrence en Turquie.</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <main class="max-w-7xl mx-auto px-6 py-16 flex-grow">
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div class="space-y-6">
+                <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Rapports Complets et Analyse de Données</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Nous fournissons des données officielles et de terrain pour le groupe de produits ou de secteurs dans lequel vous souhaitez pénétrer ou accroître votre présence existante sur le marché turc.
+                </p>
+
+                <div class="space-y-4 pt-2">
+                    <div class="glass-card p-4 rounded-xl flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-lg bg-indigo-50 border border-indigo-100 text-indigo-600 flex items-center justify-center shrink-0 mt-1">
+                            <i class="fa-solid fa-chart-line text-xs"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-slate-900 text-sm font-semibold">Volumes d'Importation et d'Exportation</h4>
+                            <p class="text-slate-600 text-xs mt-1">Chiffres récents du commerce extérieur de la Turquie, principaux pays fournisseurs et tendances des prix.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-4 rounded-xl flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-lg bg-indigo-50 border border-indigo-100 text-indigo-600 flex items-center justify-center shrink-0 mt-1">
+                            <i class="fa-solid fa-layer-group text-xs"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-slate-900 text-sm font-semibold">Acteurs du Marché & Concurrents</h4>
+                            <p class="text-slate-600 text-xs mt-1">Acteurs nationaux et internationaux dominants, parts de marché et canaux de distribution sur le marché.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-4 rounded-xl flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-lg bg-indigo-50 border border-indigo-100 text-indigo-600 flex items-center justify-center shrink-0 mt-1">
+                            <i class="fa-solid fa-scale-balanced text-xs"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-slate-900 text-sm font-semibold">Réglementation & Régime Douanier</h4>
+                            <p class="text-slate-600 text-xs mt-1">Analyse des droits de douane, des normes réglementaires et des barrières à l'entrée sur le marché.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative rounded-2xl p-2 bg-white border border-slate-200 overflow-hidden shadow-xl">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80" 
+                     alt="Étude de Marché" 
+                     class="rounded-xl w-full h-[400px] object-cover">
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="glass-card p-8 md:p-10 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-6 border-indigo-200 bg-white shadow-xl">
+            <div>
+                <h3 class="text-xl font-semibold text-slate-900">Demande de Rapport Sectoriel</h3>
+                <p class="text-slate-600 text-sm mt-1">Laissez-nous préparer un rapport de marché personnalisé pour votre ambassade ou l'institution que vous représentez.</p>
+            </div>
+            <a href="index-fr.html#iletisim" class="px-6 py-3 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium text-sm transition shrink-0 shadow-md">
+                Demander un Devis
+            </a>
+        </div>
+    </main>
+
+    <footer class="py-8 border-t border-slate-200 bg-white text-center text-xs text-slate-500 mt-auto">
+        <p>&copy; 2026 Inboxyl Global Trade Consulting. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
