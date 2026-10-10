@@ -58,36 +58,36 @@
             </nav>
 
             <div class="flex items-center gap-4">
-                <!-- Dil Seçim Menüsü -->
-                <div class="relative group">
-                    <button class="flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full border border-slate-300 text-slate-700 hover:bg-slate-100 transition">
-                        <i class="fa-solid fa-globe text-indigo-600"></i>
-                        <span>TR</span>
-                        <i class="fa-solid fa-chevron-down text-[10px] text-slate-400"></i>
-                    </button>
+<!-- Dil Seçim Menüsü -->
+<div class="relative group py-2">
+    <button class="flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full border border-slate-300 text-slate-700 hover:bg-slate-100 transition">
+        <i class="fa-solid fa-globe text-indigo-600"></i>
+        <span>TR</span>
+        <i class="fa-solid fa-chevron-down text-[10px] text-slate-400"></i>
+    </button>
 
-                    <!-- Dropdown List -->
-                    <div class="absolute right-0 mt-1 w-36 bg-white border border-slate-200 rounded-xl shadow-xl py-2 hidden group-hover:block transition-all z-50">
-                        <a href="index.html" class="flex items-center justify-between px-4 py-1.5 text-xs font-semibold text-indigo-600 bg-slate-50">
-                            Türkçe <span>TR</span>
-                        </a>
-                        <a href="index-en.html" class="flex items-center justify-between px-4 py-1.5 text-xs font-medium text-slate-700 hover:bg-slate-100 transition">
-                            English <span>EN</span>
-                        </a>
-                        <a href="index-de.html" class="flex items-center justify-between px-4 py-1.5 text-xs font-medium text-slate-700 hover:bg-slate-100 transition">
-                            Deutsch <span>DE</span>
-                        </a>
-                        <a href="index-fr.html" class="flex items-center justify-between px-4 py-1.5 text-xs font-medium text-slate-700 hover:bg-slate-100 transition">
-                            Français <span>FR</span>
-                        </a>
-                        <a href="index-es.html" class="flex items-center justify-between px-4 py-1.5 text-xs font-medium text-slate-700 hover:bg-slate-100 transition">
-                            Español <span>ES</span>
-                        </a>
-                        <a href="index-ar.html" class="flex items-center justify-between px-4 py-1.5 text-xs font-medium text-slate-700 hover:bg-slate-100 transition">
-                            العربية <span>AR</span>
-                        </a>
-                    </div>
-                </div>
+    <!-- Dropdown List (Açılır Liste - Boşluksuz Bağlantı) -->
+    <div class="absolute right-0 top-full -mt-1 w-40 bg-white border border-slate-200 rounded-xl shadow-xl py-2 hidden group-hover:block transition-all z-50">
+        <a href="index.html" class="flex items-center justify-between px-4 py-2 text-xs font-semibold text-indigo-600 bg-slate-50">
+            Türkçe <span class="text-slate-400 font-normal">TR</span>
+        </a>
+        <a href="index-en.html" class="flex items-center justify-between px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 transition">
+            English <span class="text-slate-400 font-normal">EN</span>
+        </a>
+        <a href="index-de.html" class="flex items-center justify-between px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 transition">
+            Deutsch <span class="text-slate-400 font-normal">DE</span>
+        </a>
+        <a href="index-fr.html" class="flex items-center justify-between px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 transition">
+            Français <span class="text-slate-400 font-normal">FR</span>
+        </a>
+        <a href="index-es.html" class="flex items-center justify-between px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 transition">
+            Español <span class="text-slate-400 font-normal">ES</span>
+        </a>
+        <a href="index-ar.html" class="flex items-center justify-between px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 transition">
+            العربية <span class="text-slate-400 font-normal">AR</span>
+        </a>
+    </div>
+</div>
 
                 <a href="#iletisim" class="text-xs font-semibold px-4 py-2 rounded-full bg-slate-900 text-white hover:bg-slate-800 transition shadow-sm">İletişim</a>
             </div>
